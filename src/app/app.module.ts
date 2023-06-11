@@ -6,12 +6,14 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PostView } from "./post.component";
 import { SimpleNgModelComp } from './ngmodel.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SimpleNgModelComp
+    SimpleNgModelComp,
+    PostView
   ],
   imports: [
     BrowserModule,

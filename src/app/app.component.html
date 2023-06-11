@@ -8,6 +8,6 @@
     </div>
     <p> Token: {{token}} </p>
     <div class="post-list" *ngFor="let post of posts">
-      <p>{{post.title}}</p>
+      <post-view [post]=post></post-view>
     </div>
 </div>
