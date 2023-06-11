@@ -1,6 +1,12 @@
 <div>
     <h1> Hello from this blog </h1>
     <input type='button' (click)="updatePosts()" value='Update'/>
+    <div class='login-form'>
+      <input [(ngModel)]='formAuth.username' />
+      <input [(ngModel)]='formAuth.password' />
+      <input type='button' (click)="submit()" value='Login'>
+    </div>
+    <p> Token: {{token}} </p>
     <div class="post-list" *ngFor="let post of posts">
       <p>{{post.title}}</p>
     </div>
